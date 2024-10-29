@@ -1,31 +1,47 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mood Timer</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="container">
-    <!-- Timer in alto -->
-    <div id="timer" class="timer">00:00:00</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mood Timer</title>
+    <link rel="stylesheet" href="style.css" /><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Inside Out Mood!</h1>
+      <img class="imageGroup" src="assets/Inside-Out.png" alt="coddio" />
+      <!-- Timer in alto -->
+      <div id="timer" class="timer">00:00:00</div>
 
-    <!-- Selettore di Mood -->
-    <div class="mood-selector">
-      <h2>Choice your mood:</h2>
-      <div class="mood-options">
-        <button id="moodButton" onclick="selectMood('Joy', '😊')">😊 Joy</button>
-        <button id="moodButton" onclick="selectMood('Sadness', '😢')">😢 Sadness</button>
-        <button id="moodButton" onclick="selectMood('Fear', '😨')">😨 Fear</button>
-        <button id="moodButton" onclick="selectMood('Disgust', '🤢')">🤢 Disgust</button>
-        <button id="moodButton" onclick="selectMood('Anger', '😡')">😡 Anger</button>
+      <!-- Selettore di Mood -->
+      <div class="mood-selector">
+        <h2>Choice your mood:</h2>
+        <div class="mood-options">
+          <button id="moodButton1" onclick="selectMood('Joy', '😊')">
+            😊 Joy
+          </button>
+          <button id="moodButton2" onclick="selectMood('Sadness', '😢')">
+            😢 Sadness
+          </button>
+          <button id="moodButton3" onclick="selectMood('Fear', '😨')">
+            😨 Fear
+          </button>
+          <button id="moodButton4" onclick="selectMood('Disgust', '🤢')">
+            🤢 Disgust
+          </button>
+          <button id="moodButton5" onclick="selectMood('Anger', '😡')">
+            😡 Anger
+          </button>
+        </div>
+        <!-- Area per visualizzare il mood selezionato -->
+        <div id="selected-mood" class="selected-mood">
+          Your mood will appear here.
+        </div>
       </div>
-      <!-- Area per visualizzare il mood selezionato -->
-      <div id="selected-mood" class="selected-mood">Your mood will appear here.</div>
     </div>
-  </div>
 
-  <script src="main.js"></script>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
