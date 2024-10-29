@@ -9,17 +9,17 @@
 <body>
   <div class="container">
     <!-- Timer in alto -->
-    <div id="timer" class="timer">24:00:00</div>
+    <div id="timer" class="timer">00:00:00</div>
 
     <!-- Selettore di Mood -->
     <div class="mood-selector">
-      <h2>Scegli il tuo mood:</h2>
+      <h2>Choice your mood:</h2>
       <div class="mood-options">
-        <button onclick="selectMood('Joy', '😊')">😊 Joy</button>
-        <button onclick="selectMood('Sadness', '😢')">😢 Sadness</button>
-        <button onclick="selectMood('Fear', '😨')">😨 Fear</button>
-        <button onclick="selectMood('Disgust', '🤢')">🤢 Disgust</button>
-        <button onclick="selectMood('Anger', '😡')">😡 Anger</button>
+        <button id="moodButton" onclick="selectMood('Joy', '😊')">😊 Joy</button>
+        <button id="moodButton" onclick="selectMood('Sadness', '😢')">😢 Sadness</button>
+        <button id="moodButton" onclick="selectMood('Fear', '😨')">😨 Fear</button>
+        <button id="moodButton" onclick="selectMood('Disgust', '🤢')">🤢 Disgust</button>
+        <button id="moodButton" onclick="selectMood('Anger', '😡')">😡 Anger</button>
       </div>
       <!-- Area per visualizzare il mood selezionato -->
       <div id="selected-mood" class="selected-mood">Your mood will appear here.</div>
