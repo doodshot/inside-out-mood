@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mood Timer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Timer in alto -->
+    <div id="timer" class="timer">24:00:00</div>
+
+    <!-- Selettore di Mood -->
+    <div class="mood-selector">
+      <h2>Scegli il tuo mood:</h2>
+      <div class="mood-options">
+        <button onclick="selectMood('Joy', '😊')">😊 Joy</button>
+        <button onclick="selectMood('Sadness', '😢')">😢 Sadness</button>
+        <button onclick="selectMood('Fear', '😨')">😨 Fear</button>
+        <button onclick="selectMood('Disgust', '🤢')">🤢 Disgust</button>
+        <button onclick="selectMood('Anger', '😡')">😡 Anger</button>
+      </div>
+      <!-- Area per visualizzare il mood selezionato -->
+      <div id="selected-mood" class="selected-mood">Your mood will appear here.</div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
