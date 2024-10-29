@@ -9,6 +9,42 @@ body {
   background-color: rgb(132, 200, 223);
 }
 
+.gioia,
+.rabbia,
+.tristezza,
+.disgusto,
+.paura,
+.bing-bong {
+  position: absolute;
+  z-index: -1;
+}
+
+.gioia {
+  left: 5%;
+  top: 2%;
+}
+.rabbia {
+  right: 7%;
+  top: 5%;
+}
+.paura {
+  right: 25%;
+  top: 30%;
+}
+.tristezza {
+  left: 5%;
+  top: 50%;
+}
+.disgusto {
+  right: 5%;
+  top: 50%;
+}
+
+.bing-bong {
+  left: 25%;
+  top: 30%;
+}
+
 .container {
   text-align: center;
 }
